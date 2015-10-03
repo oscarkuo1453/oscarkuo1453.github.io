@@ -1,0 +1,277 @@
+<html>
+<head>
+<title>CSS layout 0919</title>
+<style type="text/css">
+body{
+margin-top:30px;
+margin-left:30px;
+}
+
+.frame{
+width:1000px;
+margin-left:auto;
+margin-right:auto;
+background-color:#ccc;
+}
+
+.header{
+width:980;
+padding:10px;
+text-align:center;
+background-color:#ccff66;
+}
+.header a:hover{
+ text-decoration:none;
+}
+.aside{
+width:160px;
+padding:20px;
+font-size:18px;
+background-color:#ccf121;
+color:black;
+text-align:left;
+float:left;
+}
+.aside a:hover{
+padding:0px;
+font-size:18px;
+background-color:#ddd222;
+border-left:5px solid rgb(239,213,252);
+text-decoration:none;
+}
+.section{
+width:784px;
+padding:8px;
+font-size:12px;
+background-color:#eee;
+float:left;
+}
+
+.section p{
+margin:1px;
+padding-left:8px;
+padding-top:0px;
+padding-bottom:0px;
+line-height:12px;
+font-size:12px;
+text-shadow:2px 2px 2px #999;
+}
+
+.left{
+width:180px;
+height:270px;
+padding:10px;
+background-color:#ddd;
+font-size:15px;
+text-align:left;
+float:left;
+}
+
+.nav{
+list-style:none;
+margin:0;
+padding:0;
+} 
+.nav li{
+border-left:10px solid #ddd;
+border-bottom:1px solid #ddd;
+}
+.nav li a{
+text-decoration:none;
+}
+.nav li a:link,
+.nav li a:visited {
+ color:rgb(49,52,61);
+ padding:0.5px;
+ display:block;
+ text-decoration:none;
+ border-left:5px solid rgb(239,213,252);
+}
+ 
+.nav li a:hover {
+text-decoration:none;
+background-color: rgb(192,202,229);
+color:rgb(49,52,61);
+border-left:2px solid rgb(239,213,252);
+}
+ 
+.nav ul{
+list-style:none;
+margin:0px;
+padding:0px;
+border:0px;
+}
+
+.mid{
+width:380px;
+height:270px;
+padding:10px;
+background-color:#cce333;
+font-size:15px;
+text-align:left;
+float:left;
+}
+.right{
+width:360px;
+height:250px;
+padding:20px;
+background-color:#cdd222;
+font-size:15px;
+text-align:left;
+float:left;
+}
+.item{
+width:60px; 
+font-size:13px;
+margin-left:2px;
+margin-right:2px;
+cursor:pointer;
+}
+.item:hover{
+color:red;
+}
+.menu{
+background-color:#eeeeeee;
+width:70px;
+padding:3px;
+border:1px solid #888888;
+line-height:16px;
+display:none;
+position:absolute;
+}
+
+.footer1{
+width:240;
+padding:5px;
+background-color:#ddd111;
+font-size:11px;
+text-align:left;
+float:left;
+}
+ 
+.footer1 a:hover {
+background-color: rgb(192,202,229); 
+text-decoration:none;
+}
+ 
+.footer2{
+width:740;
+padding:5px;
+background-color:#ddd111;
+font-size:11px;
+text-align:left;
+float:left;
+}
+ 
+ </style>
+ <script type="text/javascript">
+ function ChMenu(menuId){
+    var   i=document.getElementById(menuId+"-item");
+    var   m=document.getElementById(menuId);
+    if (m.style.display!="block"){
+       m.style.display="block";
+       var left=i.offsetLeft;
+       var top=i.offsetTop + i.offsetHeight;
+       m.style.left=left+"px";
+       m.style.top=top+"px";
+  }else{
+      m.style.display="none";
+  }
+}
+</script>
+  
+</head>
+<body>
+<div class="frame">
+  <div class="header">
+   <table  width="980"  height="15" border="0" cellspacing="0" cellpadding="0">
+         <tr><td></td></tr>
+   </table>	
+   <table  width="980"  height="30" border="0" cellspacing="0" cellpadding="0"  >
+        <tr> <td align="center" style="font-size:26px;">Web Sit Heading </td></tr>
+   </table>	
+   <table  width="980"  height="15" border="0" cellspacing="0" cellpadding="0" >
+      <tr> <td align="right"  style="font-size:11px;">  <a href="#" >Home</a> | <a href="#">About us</a> | <a href="#">Products</a> 
+      </td></tr>
+   </table>	
+  </div>
+  <div class="aside" >
+        <a href="#">Lin1</a><br>
+		<a href="#">Lin2</a><br>
+		<a href="#">Lin3</a> 
+  </div> 
+  <div class="section">
+	  <p>The HTML Certificate documents your knowledge of HTML.
+      <p>The HTML5 Certificate documents your knowledge of advanced HTML5.
+      <p>The CSS Certificate documents your knowledge of advanced CSS.
+      <p>The JavaScript Certificate documents your knowledge of JavaScript and HTML DOM.
+      <p>The jQuery Certificate documents your knowledge of jQuery.
+      <p>The PHP Certificate documents your knowledge of PHP and SQL (MySQL).
+      <p>The XML Certificate documents your knowledge of XML, XML DOM and XSLT.
+	  <p>
+  </div>
+     <div style="clear:both"> 
+     </div> 
+     <div class="left">	
+	   <ul class="nav">
+	     <li><a href="#">Sales</a>
+	         <ul>
+	             <li><a href="#">S-001</a></li>
+		         <li><a href="#">S-002</a></li>
+		         <li><a href="#">S-003</a></li>
+	         </ul>
+	     </li> 
+	    <li><a href="#">Finance</a>
+	        <ul>
+	            <li><a href="#">F-001</a></li>
+		        <li><a href="#">F-002</a></li>
+		        <li><a href="#">F-003</a></li>
+	        </ul>
+	    </li>
+	     <li><a href="#">Market</a>
+	         <ul>
+	             <li><a href="#">M-001</a></li>
+		         <li><a href="#">M-002</a></li>
+	         </ul>
+	     </li>
+	  </ul>
+	</div>
+	
+	<div class="mid">
+	 <table  width="380" height="270"  border="1" cellspacing="0" cellpadding="0"  >
+        <tr><td>xx1</td><td>xx2 </td><td>xx3</td> </tr>
+        <tr><td>xx21</td><td>xx22</td><td>xx33</td> </tr>
+	    <tr><td>xx31</td><td>xx32</td><td>xx33</td> </tr>
+     </table>	
+    </div>
+	<div class="right">
+	 <div>
+        <span class="item" id="PG-item" onClick="ChMenu('PG');"> Programs</span>  
+        <div class="menu"  id="PG">
+             <div>JavaScript</div>
+	         <div>C/C++</div>
+			 <div>C#</div>
+			 <div>PHP</div>
+			 <div>ASP.net</div>
+        </div>	
+        <span class="item" id="DB-item" onClick="ChMenu('DB');"> Database</span>	   
+        <div class="menu" id="DB">
+             <div>SQL-2012</div>
+	         <div>Oracle</div>
+			 <div>MySQL</div>
+        </div>
+        <span class="item" id="PT-item" onClick="ChMenu('PT');"> Platform</span>
+        <div class="menu" id="PT">
+             <div>Win-2012</div>
+	         <div>Unix</div>
+		</div>
+	 </div>
+	</div>
+	<div style="clear:both"> </div> 
+	<div class="footer1">  
+	   <a href="#" >about</a> | <a href="#">contact to me</a> | <a href="#">xxxgood</a> 
+	</div>
+    <div class="footer2"> 2015 CSS copyright ,.</div>
+</div>
+</body>
+</html>
