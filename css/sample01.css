@@ -98,7 +98,19 @@ footer {
    width: 45%;
    float: right;
  }
-}
+#contents_menu3 {
+   width: 45%;
+   float: left;
+ }
+ #contents_menu4 {
+   width: 45%;
+   float: right;
+ }
+  #contents_menu5 {
+   width: 45%;
+   float: left;
+ }
+ }
 
 /*  電腦：769px～960px */
 @media only screen and (min-width: 769px) {
