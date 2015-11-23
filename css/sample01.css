@@ -27,6 +27,12 @@ header h1 {
   margin: 0 0 0.2em;
   color: #fff;
 }
+
+header h1 span {
+	font-style: italic;
+	color: rgb(241,47,93);
+}
+
 nav {
   margin: 0;
   background-color: #001cdf;
@@ -93,22 +99,42 @@ footer {
  #contents_menu1 {
    width: 45%;
    float: left;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   -ms-border-radius: 5px;
+    border-radius: 5px;
  }
  #contents_menu2 {
    width: 45%;
    float: right;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   -ms-border-radius: 5px;
+    border-radius: 5px;
  }
 #contents_menu3 {
    width: 45%;
    float: left;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   -ms-border-radius: 5px;
+    border-radius: 5px;
  }
  #contents_menu4 {
    width: 45%;
    float: right;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   -ms-border-radius: 5px;
+    border-radius: 5px;
  }
   #contents_menu5 {
    width: 45%;
    float: left;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   -ms-border-radius: 5px;
+    border-radius: 5px;
  }
  }
 
